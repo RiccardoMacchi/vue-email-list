@@ -12,9 +12,11 @@
 </head>
 <body>
     <div id="app">
-        <div v-for="email in emails">
+        <h1>RANDOM MAIL LIST FROM BOOLEAN'S API</h1>
+        <div id="mail_list" v-for="email in emails">
            {{ email }}
         </div>
+        <div id="btn_more" @click="getEmailApi">MORE MAIL!</div>
     </div>
     
     <script src="js/main.js"></script>
